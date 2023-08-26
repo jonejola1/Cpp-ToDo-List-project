@@ -19,10 +19,10 @@ private:
 
 	void new_task();
 	bool input_handler(int action);
-	int promt_user(); 
-	void list_tasks(std::vector<Todo>& tasks);
+	int prompt_user(); 
+	void list_tasks(vector<Todo>& tasks);
 
-	std::vector<Todo> tasks;
+	vector<Todo> tasks;
 };
 
 

@@ -1,8 +1,8 @@
 
 #include "todo.h"
+using namespace std;
 
-
-Todo::Todo(const std::string& desc) : description(desc), isCompleted(false)
+Todo::Todo(const string& desc) : description(desc), isCompleted(false)
 {
 }
 
@@ -10,7 +10,7 @@ void Todo::markCompleted() {
 	isCompleted = true;
 }
 
-std::string Todo::getDescription() const{
+string Todo::getDescription() const{
 	return description;
 }
 
@@ -18,6 +18,6 @@ bool Todo::isTaskCompleted() const {
 	return isCompleted;
 }
 
-void Todo::changeTaskDesc(std::string newDesc) {
+void Todo::changeTaskDesc(string newDesc) {
 	description = newDesc;
 }

@@ -2,6 +2,8 @@
 #include <iostream>
 #include "ui.h"
 
+using namespace std;
+
 
 int main()
 {
@@ -9,6 +11,6 @@ int main()
 	ui_instance1.ui_run();
 
 
-	std::cout << "Done!" << std::endl;
+	cout << "Done!" << endl;
 	return 0;
 }

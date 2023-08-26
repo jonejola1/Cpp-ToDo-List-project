@@ -9,15 +9,15 @@ class Todo
 {
 public: 
 	Todo() = default;
-	Todo(const std::string& desc);
+	Todo(const string& desc);
 	void markCompleted();
-	std::string getDescription()const;
+	string getDescription()const;
 	bool isTaskCompleted()const;
-	void changeTaskDesc(std::string newDesc);
+	void changeTaskDesc(string newDesc);
 	~Todo() =default;
 
 private:
-	std::string description{};
+	string description{};
 	bool isCompleted{};
 };
 
