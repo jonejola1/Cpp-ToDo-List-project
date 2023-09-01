@@ -3,8 +3,6 @@
 #include "todo.h"
 
 
-
-
 void Ui::new_task()
 {
 	std::string text;
