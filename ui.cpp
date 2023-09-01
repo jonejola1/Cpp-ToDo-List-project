@@ -48,7 +48,7 @@ int Ui::promt_user()
 	{
 		system("cls");
 		int action_select;
-		std::cout << "Select action you want to do: || ONLY NUMBER || \n1. New To-do task \n2. Show all Tasks or Remove  \n3. Exit program" << std::endl;
+		std::cout << "Select action you want to do: || ONLY WHOLE NUMBERS || \n1. New To-do task \n2. Show all Tasks or Remove  \n3. Exit program" << std::endl;
 
 		std::cin >> action_select;
 
@@ -77,7 +77,7 @@ void Ui::list_tasks(std::vector<Todo>& tasks)
 		std::cout << "Invalid input. Please enter a valid number or 'c' to cancel: " << std::endl;
 	}
 
-	if(userInput == "c") {
+	if(userInput == "c" || userInput == "C") {
 		std::cout << "Cancelled." << std::endl;
 		return;
 	} else {
